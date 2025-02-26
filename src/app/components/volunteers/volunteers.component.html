@@ -1,0 +1,23 @@
+<!--Volunteers-->
+<aside id="volunteers" class="scrollto text-center" data-enllax-ratio=".2">
+
+    <div class="row clearfix">
+
+        <div class="section-heading">
+            <h3>{{volunteers.title}}</h3>
+            <h2 class="section-title">{{volunteers.description}}</h2>
+        </div>
+        @for (feedback of volunteers.feedbacks; track feedback) {
+        <!--User Volunteer-->
+        <blockquote class="col-3 volunteer classic">
+            <img src="{{feedback.userimage}}" alt="User"/>
+            <q>{{feedback.comments}}</q>
+            <footer>{{feedback.name}} - Sadvipra Volunteer</footer>
+        </blockquote>
+        <!-- End of Volunteer-->
+    }
+
+    </div>
+
+</aside>
+<!--End of Volunteers-->
